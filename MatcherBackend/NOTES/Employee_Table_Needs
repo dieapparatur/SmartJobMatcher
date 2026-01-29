@@ -1,0 +1,18 @@
+Was braucht employee TABLE?
+Name NN
+Age NN
+Picture (Flyway Version Later) NN bzw Default Picture when nothing is uploaded
+Searching for (Full Time, Part Time, Ausbildungsplatz, Werkstudentenstelle)
+Degree
+Years of experience
+Wanted Location
+Info Text
+Gender
+Pronouns
+
+Foreign Keys (in Flyway V2 weil in V1 diese Table noch nicht existieren?)
+to Skills Table
+to Languages Table
+to Preferred Work Locations / Country
+
+Save interesting Job-Posting for later consideration if not immediately liked

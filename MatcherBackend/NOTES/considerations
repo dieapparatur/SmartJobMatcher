@@ -1,0 +1,14 @@
+ich denke dass das erste am sinnvollsten ist;
+ich baue sowas wie ein Hinge für Jobsuche, und da wär es nützlich anzugeben, wo der Job sich befindet oder für die Suchenden, wo sie denn gerne arbeiten wollen würden; außerdem bin ich mir noch unsicher wie ichs anlegen soll; ob ich nur employee und employer mache, oder noch was drittes und zwar jobs als solches; dann können employer mehrere jobs posten, dann die kandidaten die sich beworben haben swipen; die Employees können im gegenzug die Jobs swipen und das Profil des Arbeitgebers (person oder einfach Firma? Macht das überhaupt einen Unterscheid)
+
+
+ich denke ich mache es so dass man nur aus employee und Firma wählen kann, dann die Firma Jobs reinstellt, die geswiped werden können; zu jedem Job werden Firmen Infos gegeben; der Employee liked und nun kann die Firma je nach Job die Kandidaten auswählen
+
+
+außerdem, wäre es "stressig" noch einen chat zu bauen? das projekt soll eigentlich nur dafür da sein, dass ich mich damit auf einen wekstudentenjob bewerbe
+
+
+
+Employee
+Job
+Firma
