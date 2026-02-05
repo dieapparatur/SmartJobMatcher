@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d4987a00-de94-4f71-be5e-f1d1e7174d53" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/NOTES/Employee_Table_Needs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/NOTES/Employer_Table_Needs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/NOTES/considerations" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/src/main/java/com/JobSmartMatcher/Matcher/HealthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/src/main/java/com/JobSmartMatcher/Matcher/MatcherApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/src/main/resources/db/migration/V1__init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatcherBackend/src/test/java/com/JobSmartMatcher/Matcher/MatcherApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="394tsoZ4ghQ06JM2QlgA8MJMNAm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MatcherApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/fynnnegele/Documents/Coding_Projects/SmartMatcher/JWTErsatz"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4987a00-de94-4f71-be5e-f1d1e7174d53" name="Changes" comment="" />
+      <created>1769967379529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769967379529</updated>
+    </task>
+    <servers />
+  </component>
+</project>
