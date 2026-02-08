@@ -8,5 +8,7 @@ public interface CandidateRepository extends JpaRepository<CandidateEntity, Long
 
     public boolean existsByEmail(String email);
 
+    public CandidateEntity findByEmail(String email);
+
 
 }
