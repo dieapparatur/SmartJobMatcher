@@ -19,23 +19,26 @@ public class RegistrationController {
 
 
     public final CandidateRepository candidateRepository;
+    public final CandidateEntity candidateEntity;
 
 
-    public RegistrationController(CandidateRepository candidateRepository) {
+    public RegistrationController(CandidateRepository candidateRepository, CandidateEntity candidateEntity) {
         this.candidateRepository = candidateRepository;
+        this.candidateEntity = candidateEntity;
     };
 
 
-    @PostMapping(path = "/register")
+    @PostMapping(path = "/register/candidate")
     public String registrationHandler(@RequestParam(value = "firstName", defaultValue = "Default First Name") String firstName,
                                       @RequestParam(value = "lastName", defaultValue = "Default Last Name") String lastName,
                                       @RequestParam(value = "email", defaultValue = "Default E-Mail") String email,
                                       @RequestParam(value = "password", defaultValue = "Default Password") String password,
                                       @RequestParam(value = "repeatedPassword", defaultValue = "Default repeated Password") String repeatedPassword,
-                                      @RequestParam(value = "preferredEmploymentType", defaultValue = "Preferred Employment Type") String preferredEmploymentType)
+                                      @RequestParam(value = "preferredEmploymentType", defaultValue = "Preferred Employment Type") String preferredEmploymentType,
+                                      @RequestParam(value = "role", defaultValue = "Default Role") String role)
     {
         //Sollte checken ob da vielleicht NULL-Errors oder so reingekommen sind (EVTL ÜBERARBEITEN)
-        if (firstName.equals("Default First Name") || lastName.equals("Default Last Name") || email.equals("Default E-Mail") || password.equals("Default Password") || repeatedPassword.equals("Default repeated Password")) {
+        if (firstName.equals("Default First Name") || lastName.equals("Default Last Name") || email.equals("Default E-Mail") || password.equals("Default Password") || repeatedPassword.equals("Default repeated Password") || role.equals("Default Role")) {
             return "Something went wrong. Some registration data may got lost or are NULL. Please try again or contact support.";
         }
 
@@ -55,7 +58,7 @@ public class RegistrationController {
                 String hashedPassword = passwordEncoder.encode(password);
 
                 System.out.println("Creating new Candidate with necessary parameters.");
-                CandidateEntity candidateEntity = new CandidateEntity(firstName, lastName, preferredEmploymentType, email, hashedPassword);
+                CandidateEntity candidateEntity = new CandidateEntity(firstName, lastName, preferredEmploymentType, email, hashedPassword, role);
 
                 System.out.println("Saving new Candidate to DB");
 
