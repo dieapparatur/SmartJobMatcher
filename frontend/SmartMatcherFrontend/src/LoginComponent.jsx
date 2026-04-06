@@ -1,14 +1,18 @@
 import {useState} from "react";
+import {login} from "./userService.js"
 
 
 function LoginComponent() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    function handleLogin(event) {
+    async function handleLogin(event) {
         event.preventDefault();
         console.log("Trying to handle Login with following credentials.\nE-Mail: " + email + ". Password: " + password);
-
+        const loginResponse = await login(email, password);
+        console.log("Response from backend (likely JWT): " + loginResponse);
+        localStorage.setItem('accessToken', loginResponse);
+        //const token = localStorage.getItem('accessToken');
     }
 
 
@@ -21,9 +25,8 @@ function LoginComponent() {
                 <button type="submit">Login</button>
             </form>
             <div>Email: {email}</div>
-            <div>Password: {password}</div>
+            <div>Password: {password}</div>s
         </div>
-
     );
 }
 

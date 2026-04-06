@@ -1,7 +1,6 @@
 package com.JobSmartMatcher.Matcher.auth;
 
 import com.JobSmartMatcher.Matcher.Entities.CandidateEntity;
-import com.JobSmartMatcher.Matcher.Entities.CandidateEntity;
 import com.JobSmartMatcher.Matcher.Entities.Repos.CandidateRepository;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -9,12 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.sql.SQLOutput;
-import java.util.Optional;
-import java.util.regex.Pattern;
-
 @RestController
-public class RegistrationController {
+public class CandidateRegistrationController {
 
 
 
@@ -22,7 +17,7 @@ public class RegistrationController {
     public final CandidateEntity candidateEntity;
 
 
-    public RegistrationController(CandidateRepository candidateRepository, CandidateEntity candidateEntity) {
+    public CandidateRegistrationController(CandidateRepository candidateRepository, CandidateEntity candidateEntity) {
         this.candidateRepository = candidateRepository;
         this.candidateEntity = candidateEntity;
     };
@@ -58,7 +53,7 @@ public class RegistrationController {
                 String hashedPassword = passwordEncoder.encode(password);
 
                 System.out.println("Creating new Candidate with necessary parameters.");
-                CandidateEntity candidateEntity = new CandidateEntity(firstName, lastName, preferredEmploymentType, email, hashedPassword, role);
+                CandidateEntity candidateEntity = new CandidateEntity(firstName, lastName, preferredEmploymentType, email, hashedPassword);
 
                 System.out.println("Saving new Candidate to DB");
 

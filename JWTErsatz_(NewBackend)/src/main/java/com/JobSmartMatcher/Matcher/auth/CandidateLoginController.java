@@ -5,31 +5,26 @@ import com.JobSmartMatcher.Matcher.Entities.CandidateEntity;
 import com.JobSmartMatcher.Matcher.Entities.Repos.CandidateRepository;
 import com.JobSmartMatcher.Matcher.auth.security.JWTAuthController;
 import com.JobSmartMatcher.Matcher.auth.security.LoginRequest;
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import static java.rmi.server.LogStream.log;
-
 @CrossOrigin(origins = "http://localhost:5173") // Allow requests from React
 @RestController
-public class LoginController {
+public class CandidateLoginController {
 
 
     public final CandidateRepository candidateRepository;
     public final JWTAuthController jwtAuthController;
 
-    public LoginController(CandidateRepository candidateRepository, JWTAuthController jwtAuthController) {
+    public CandidateLoginController(CandidateRepository candidateRepository, JWTAuthController jwtAuthController) {
         this.candidateRepository = candidateRepository;
         this.jwtAuthController = jwtAuthController;
     }
 
     @PostMapping(path = "/login/candidate")
-    public String loginControl(@RequestBody LoginRequest request) {
+    public String loginControl(@RequestParam(value = "email") String email, @RequestParam(value = "password") String password) {
 
-        String email = request.getEmail();
-        String password = request.getPassword();
 
         if (email.equals("Default E-Mail") || password.equals("Default Password")) {
             return "Some credentials seem to be missing, or something went wrong with giving the data over.";
@@ -40,7 +35,6 @@ public class LoginController {
             PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
             if (passwordEncoder.matches(password, customer.getHashedPassword())) {
                 return jwtAuthController.loginJWT(email, password);
-                //return "User was found with first name " + customer.getFirstName();
             } else {
                 return "Error with code 401: Authentication failed.\nRefresh page.";
             }

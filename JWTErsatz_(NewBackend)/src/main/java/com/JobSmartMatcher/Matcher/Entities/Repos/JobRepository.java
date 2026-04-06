@@ -1,24 +1,28 @@
-package com.JobSmartMatcher.Matcher.auth.company;
+package com.JobSmartMatcher.Matcher.Entities.Repos;
 
+import com.JobSmartMatcher.Matcher.Entities.CompanyEntity;
+import com.JobSmartMatcher.Matcher.Entities.JobEntity;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.CommonAnnotationBeanPostProcessor;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
-public interface JobRepository extends JpaRepository<jobEntity, Long> {
+import java.util.List;
 
-    @Bean
+
+@Repository
+public interface JobRepository extends JpaRepository<JobEntity, Long> {
+
+
     public boolean existsByField(String field);
 
-    @Bean
-    public jobEntity findByField(String field);
+    public List<JobEntity> findAllByField(String field);
 
-    //in case that there is some filter to only select jobs from certain companies
-    @Bean
-    public boolean existsByCompany(String company);
+    public boolean existsByCompany(CompanyEntity company);
 
-    @Bean
-    public jobEntity findByCompany(String company);
+    public List<JobEntity> findAllByCompany(CompanyEntity company);
+
+    public boolean existsByTitleAndCompany(String name, CompanyEntity company);
 
 }
 

@@ -1,0 +1,3 @@
+ALTER TABLE job_posting
+ADD CONSTRAINT uniqueName UNIQUE (job_name),
+ALTER COLUMN salary TYPE DECIMAL;

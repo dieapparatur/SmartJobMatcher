@@ -3,11 +3,14 @@ package com.JobSmartMatcher.Matcher.auth.security;
 
 import io.jsonwebtoken.*;
 import org.springframework.beans.factory.annotation.Value;
+import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+
 import java.util.*;
 
 @Component
-public class JWTUtility {
+public class JWTHandler {
 
     @Value("${jwt.secret}")
     private String secret;
@@ -15,28 +18,28 @@ public class JWTUtility {
     @Value("${jwt.expiration}")
     private long expiration;
 
-    public String generateToken(String username) {
+    public String generateToken(String email) {
         return Jwts.builder()
-                .setSubject(username)
+                .setSubject(email)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + expiration))
                 .signWith(SignatureAlgorithm.HS256, secret)
                 .compact();
     }
 
-    public String extractUsername(String token) {
-        return Jwts.parser().setSigningKey(secret)
+    public String extractEmail(String token) {
+        return Jwts.parser().setSigningKey(secret).build()
                 .parseSignedClaims(token)
-                .getBody().getSubject();
+                .getPayload().getSubject();
     }
 
-    public boolean validateToken(String token, String username) {
-        return username.equals(extractUsername(token)) && !isTokenExpired(token);
+    public boolean validateToken(String token, String email) {
+        return email.equals(extractEmail(token)) && !isTokenExpired(token);
     }
 
     private boolean isTokenExpired(String token) {
-        return Jwts.parser().setSigningKey(secret)
-                .parseClaimsJws(token)
-                .getBody().getExpiration().before(new Date());
+        return Jwts.parser().setSigningKey(secret).build()
+                .parseSignedClaims(token)
+                .getPayload().getExpiration().before(new Date());
     }
 }

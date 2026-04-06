@@ -1,13 +1,18 @@
 package com.JobSmartMatcher.Matcher.Entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.cglib.core.Local;
+import org.springframework.stereotype.Component;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
+import java.util.Optional;
 
-
+@Component
 @Entity
+@Getter
+@Setter
 @Table (name = "candidate")
 public class CandidateEntity {
 
@@ -23,13 +28,13 @@ public class CandidateEntity {
     private String lastName;
 
     @Column(name = "profile_image_url")
-    private String profilePictureURL;
+    private String picture;
 
     @Column (name = "bio")
     private String bio;
 
     @Column(name = "years_of_experience")
-    private int yearsOfExperience;
+    private Integer yearsOfExperience;
 
     @Column(nullable = false, name = "preferred_employment_type")
     private String preferredEmploymentType;
@@ -47,116 +52,15 @@ public class CandidateEntity {
     @Column(name="profile_updated_at",insertable=false, updatable=false/*, columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP"*/)
     private LocalDateTime profileUpdatedAt;
 
-    @Column(name = "candidate_mail")
+    @Column(name = "candidate_mail", nullable = false)
     private String email;
 
     @Column(nullable = false, name = "candidate_password_hash")
     private String hashedPassword;
 
+    @Column(nullable = false, name = "role")
+    private String role;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getProfilePictureURL() {
-        return profilePictureURL;
-    }
-
-    public void setProfilePictureURL(String profilePictureURL) {
-        this.profilePictureURL = profilePictureURL;
-    }
-
-    public String getBio() {
-        return bio;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
-
-    public int getYearsOfExperience() {
-        return yearsOfExperience;
-    }
-
-    public void setYearsOfExperience(int yearsOfExperience) {
-        this.yearsOfExperience = yearsOfExperience;
-    }
-
-    public String getPreferredEmploymentType() {
-        return preferredEmploymentType;
-    }
-
-    public void setPreferredEmploymentType(String preferredEmploymentType) {
-        this.preferredEmploymentType = preferredEmploymentType;
-    }
-
-    public String getPreferredWorkLocation() {
-        return preferredWorkLocation;
-    }
-
-    public void setPreferredWorkLocation(String preferredWorkLocation) {
-        this.preferredWorkLocation = preferredWorkLocation;
-    }
-
-    public String getHighestDegree() {
-        return highestDegree;
-    }
-
-    public void setHighestDegree(String highestDegree) {
-        this.highestDegree = highestDegree;
-    }
-
-    public LocalDateTime getProfileCreatedAt() {
-        return profileCreatedAt;
-    }
-
-    public void setProfileCreatedAt(LocalDateTime profileCreatedAt) {
-        this.profileCreatedAt = profileCreatedAt;
-    }
-
-    public LocalDateTime getProfileUpdatedAt() {
-        return profileUpdatedAt;
-    }
-
-    public void setProfileUpdatedAt(LocalDateTime profileUpdatedAt) {
-        this.profileUpdatedAt = profileUpdatedAt;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getHashedPassword() {
-        return hashedPassword;
-    }
-
-    public void setHashedPassword(String hashedPassword) {
-        this.hashedPassword = hashedPassword;
-    }
 
     public CandidateEntity() {}
 
@@ -164,10 +68,25 @@ public class CandidateEntity {
         this.firstName = firstName;
         this.lastName = lastName;
         this.preferredEmploymentType = preferredEmploymentType;
-        /*this.profileCreatedAt = profileCreatedAt;
-        this.profileUpdatedAt = profileUpdatedAt;*/
         this.email = email;
         this.hashedPassword = hashedPassword;
+        this.role = "candidate";
     }
 
+
+    public CandidateEntity(String firstName, String lastName, String picture, String bio, Integer yearsOfExperience, String preferredEmploymentType, String preferredWorkLocation, String highestDegree, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.picture = picture;
+        this.bio = bio;
+        this.yearsOfExperience = yearsOfExperience;
+        this.preferredEmploymentType = preferredEmploymentType;
+        this.preferredWorkLocation = preferredWorkLocation;
+        this.highestDegree = highestDegree;
+        this.email = email;
+        this.role = "candidate";
+    }
+
+    public CandidateEntity(String firstName, String lastName, String picture, String bio, Integer yOE, String location, String degree, String preferredEmploymentType) {
+    }
 }

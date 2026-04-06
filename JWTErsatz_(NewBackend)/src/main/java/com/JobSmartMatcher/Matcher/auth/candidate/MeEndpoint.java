@@ -1,4 +1,4 @@
-package com.JobSmartMatcher.Matcher.UserInfo;
+package com.JobSmartMatcher.Matcher.auth.candidate;
 
 
 import com.JobSmartMatcher.Matcher.Entities.CandidateEntity;
@@ -40,4 +40,5 @@ public class MeEndpoint {
                 + "\nRole: " + candidate.getRole()
                 + "\nPreferred employment type: " + candidate.getPreferredEmploymentType();
     }
+
 }

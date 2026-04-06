@@ -1,0 +1,25 @@
+firstName:Admin
+lastName:Tester
+email:test@gmail.com
+password:Testpassword
+repeatedPassword:Testpassword
+preferredEmploymentType:remote
+role:candidate
+
+
+BEREITS REGISTRIERT:
+
+CANDIDATE
+firstName:Test
+lastName:Negele
+email:test.negele@gmx.de
+password:12345
+repeatedPassword:12345
+preferredEmploymentType:remote
+
+
+COMPANY
+companyName: dieapparatur
+email: fynn.negele@gmx.de
+password: 123
+repeatedPassword: 123
