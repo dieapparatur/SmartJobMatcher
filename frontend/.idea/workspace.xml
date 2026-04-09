@@ -5,37 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28d57c8a-19e8-4832-806d-91bd0a679d28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/TesterRegistrationDaten" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/TesterRegistrationDaten" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/CandidateEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/CandidateEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/CompanyEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/CompanyEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/CountryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/CountryEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/JobEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/JobEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/Repos/CandidateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/Repos/CandidateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/Repos/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/Repos/CompanyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/Repos/CountryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/Repos/CountryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/Repos/JobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/Entities/Repos/JobRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/MatcherApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/MatcherApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/SecuredHealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/SecuredHealthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/company/MeEndpointComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/Candidate/CandidateLoginComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/LoginDecider.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CandidateLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CandidateLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CandidateRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CandidateRegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/CandidateUpdateProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/CandidateUpdateProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/MeEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/MeEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/company/PostJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/company/PostJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CompanyLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CompanyLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/MeEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/MeEndpointCand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JWTAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JWTAuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JWTHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JWTHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JwtAuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/LoginRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/UserInfoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/UserInfoHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/resources/db/migration/V5__makeCompanyNameUnique.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/resources/db/migration/V5__makeCompanyNameUnique.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/resources/db/migration/V6__makeJobTitleUnique.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/resources/db/migration/V6__makeJobTitleUnique.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/LoginComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/Test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/Test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/JobPosting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/JobPosting.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/Company/CompanyLoginComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/userService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/register.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -82,6 +71,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SmartMatcherFrontend/src/Company" />
+      <recent name="$PROJECT_DIR$/SmartMatcherFrontend/src/Candidate" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -98,7 +93,7 @@
       <updated>1772817822962</updated>
       <workItem from="1772817824019" duration="11261000" />
       <workItem from="1772992585195" duration="44041000" />
-      <workItem from="1774683432869" duration="12638000" />
+      <workItem from="1774683432869" duration="32795000" />
     </task>
     <servers />
   </component>

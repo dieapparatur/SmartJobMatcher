@@ -1,7 +1,23 @@
 import {myAxios} from "./helper.js";
 
 
-export async function login (loginEmail, loginPaswword) {
+
+export async function candidateLogin (loginEmail, loginPaswword) {
+    try {
+        return myAxios.post("http://localhost:8080/login/candidate",
+            {
+                email:loginEmail,
+                password:loginPaswword
+            })
+            .then((response) => response.data);
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+
+
+export async function companyLogin (loginEmail, loginPaswword) {
     try {
         return myAxios.post("http://localhost:8080/login/company",
             {

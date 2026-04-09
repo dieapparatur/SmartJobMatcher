@@ -32,11 +32,11 @@ public class SecurityConfig {
         return http
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/health").permitAll()
-                        .requestMatchers("/register/candidate").permitAll()
-                        .requestMatchers("/register/company").permitAll()
-                        .requestMatchers("/login/candidate").permitAll()
-                        .requestMatchers("/login/company").permitAll()
-                        .anyRequest().authenticated())
+                        .requestMatchers("/register/**").permitAll()
+                        .requestMatchers("/login/**").permitAll()
+                        .requestMatchers("/company/**").hasRole("company")
+                        .requestMatchers("/candidate/**").hasRole("candidate")
+                        .anyRequest().authenticated()) //ist das überhaupt dann noch nützlich? weil wie authenticated?
                 .cors(Customizer.withDefaults())
                 .csrf(csrf -> csrf.disable())
                 .formLogin(form -> form.disable())

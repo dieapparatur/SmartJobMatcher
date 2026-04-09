@@ -14,7 +14,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 
 
-//COMPLETELY FROM GPT
+//SOME HELP FROM GPT
 
 @Component
 public class JwtAuthFilter extends OncePerRequestFilter {
@@ -51,6 +51,8 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
         String authHeader = request.getHeader("Authorization");
 
+        for(int i = 0, i < authHeader.)
+
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             filterChain.doFilter(request, response);
             return;
@@ -59,21 +61,17 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
         try {
 
-
+            //die frage ist ob index 7 noch richtig ist?
             String token = authHeader.substring(7);
             String email = jwtHandler.extractEmail(token);
+            String role = jwtHandler.extractRole(token);
 
             if (email != null && SecurityContextHolder.getContext().getAuthentication() == null) {
                 UserDetails userDetails = userInfoHandler.loadUserByUsername(email);
 
                 if (jwtHandler.validateToken(token, userDetails.getUsername())) {
-                    UsernamePasswordAuthenticationToken authentication =
-                            new UsernamePasswordAuthenticationToken(
-                                    userDetails,
-                                    null,
-                                    userDetails.getAuthorities()
-                            );
-
+                    UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
+                    System.out.println(userDetails.getAuthorities());
                     authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                     SecurityContextHolder.getContext().setAuthentication(authentication);
                 }

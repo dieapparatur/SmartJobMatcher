@@ -18,9 +18,11 @@ public class JWTHandler {
     @Value("${jwt.expiration}")
     private long expiration;
 
-    public String generateToken(String email) {
+    public String generateToken(String email, String role) {
+        System.out.println("Return token with role: " + role);
         return Jwts.builder()
                 .setSubject(email)
+                .claim("role", role)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + expiration))
                 .signWith(SignatureAlgorithm.HS256, secret)
@@ -31,6 +33,14 @@ public class JWTHandler {
         return Jwts.parser().setSigningKey(secret).build()
                 .parseSignedClaims(token)
                 .getPayload().getSubject();
+    }
+
+    public String extractRole(String token) {
+         return Jwts.parser()
+                .setSigningKey(secret)
+                .build()
+                .parseSignedClaims("role").getPayload().toString();
+
     }
 
     public boolean validateToken(String token, String email) {

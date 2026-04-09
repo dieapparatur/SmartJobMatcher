@@ -23,9 +23,16 @@ public class JWTAuthController {
         this.jwtHandler = jwtHandler;
     }
 
-    public String loginJWT(@RequestParam String email, @RequestParam String password) {
+
+    public String candidateLoginJWT(@RequestParam String email, @RequestParam String password) {
         //authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password));
-        UserDetails candidate = userInfoHandler.loadUserByUsername(email);
-        return jwtHandler.generateToken(candidate.getUsername());
+        UserDetails candidate = userInfoHandler.loadCandidateUserByUsername(email);
+        return jwtHandler.generateToken(candidate.getUsername(), "candidate");
+    }
+
+    public String companyLoginJWT(@RequestParam String email, @RequestParam String password) {
+        //authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password));
+        UserDetails candidate = userInfoHandler.loadCompanyUserByUsername(email);
+        return jwtHandler.generateToken(candidate.getUsername(), "company");
     }
 }

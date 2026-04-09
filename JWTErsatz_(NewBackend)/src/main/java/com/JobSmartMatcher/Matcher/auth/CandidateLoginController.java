@@ -34,7 +34,7 @@ public class CandidateLoginController {
             System.out.println("Checking if provided password equals the one in the DB.");
             PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
             if (passwordEncoder.matches(password, customer.getHashedPassword())) {
-                return jwtAuthController.loginJWT(email, password);
+                return jwtAuthController.candidateLoginJWT(email, password);
             } else {
                 return "Error with code 401: Authentication failed.\nRefresh page.";
             }

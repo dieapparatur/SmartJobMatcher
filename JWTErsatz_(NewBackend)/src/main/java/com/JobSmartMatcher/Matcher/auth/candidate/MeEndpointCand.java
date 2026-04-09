@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class MeEndpoint {
+public class MeEndpointCand {
 
     public final JWTHandler jwtHandler;
     public final CandidateRepository repo;
 
-    public MeEndpoint(JWTHandler jwtHandler, CandidateRepository repo) {
+    public MeEndpointCand(JWTHandler jwtHandler, CandidateRepository repo) {
         this.jwtHandler = jwtHandler;
         this.repo = repo;
     }
@@ -21,7 +21,7 @@ public class MeEndpoint {
 
 
     //always returns candidate; there has to be an if statement that checks for the role of the user
-    @GetMapping("/me")
+    @GetMapping("/candidate/me")
     public String userInformation(@org.springframework.web.bind.annotation.RequestHeader("Authorization") String authHeader) {
         if (authHeader == null) {
             return "Missing Authorization header.";
