@@ -1,10 +1,9 @@
-package com.JobSmartMatcher.Matcher.auth;
+package com.JobSmartMatcher.Matcher.auth.candidate;
 
 
 import com.JobSmartMatcher.Matcher.Entities.CandidateEntity;
 import com.JobSmartMatcher.Matcher.Entities.Repos.CandidateRepository;
 import com.JobSmartMatcher.Matcher.auth.security.JWTAuthController;
-import com.JobSmartMatcher.Matcher.auth.security.LoginRequest;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;

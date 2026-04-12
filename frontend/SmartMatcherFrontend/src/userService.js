@@ -2,34 +2,42 @@ import {myAxios} from "./helper.js";
 
 
 
-export async function candidateLogin (loginEmail, loginPaswword) {
+export async function candidateLogin (loginEmail, loginPassword) {
     try {
-        return myAxios.post("http://localhost:8080/login/candidate",
-            {
-                email:loginEmail,
-                password:loginPaswword
-            })
-            .then((response) => response.data);
-    } catch (e) {
-        console.log(e);
-    }
-}
-
-
-
-export async function companyLogin (loginEmail, loginPaswword) {
-    try {
-        return myAxios.post("http://localhost:8080/login/company",
+        const response = await myAxios.post(
+            "http://localhost:8080/login/candidate",
             {
                 email: loginEmail,
-                password: loginPaswword
-            })
-            .then((response) => response.data);
+                password: loginPassword
+            }
+        );
+
+        return response.data;
     } catch (e) {
         console.log(e);
     }
 }
 
+
+
+export async function companyLogin (email, password) {
+    try {
+        const response = await myAxios.post(
+            "http://localhost:8080/login/company",
+            {
+                email: email,
+                password: password
+            }
+        );
+
+        return response.data;
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+
+//axios method for GET requests
 export async function getAxios(routing) {
     console.log(routing);
     try {

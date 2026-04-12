@@ -1,4 +1,4 @@
-package com.JobSmartMatcher.Matcher.auth;
+package com.JobSmartMatcher.Matcher.auth.company;
 
 import com.JobSmartMatcher.Matcher.Entities.CompanyEntity;
 import com.JobSmartMatcher.Matcher.Entities.Repos.CompanyRepository;

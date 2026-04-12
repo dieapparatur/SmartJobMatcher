@@ -34,16 +34,15 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
 
         String path = request.getServletPath();
-
+        System.out.println(path);
 
         // skip public endpoints
         //Question is if I have to do that if they are already permitted in the SecurityConfig; maybe because of .addFilterBefore?
         if (
-                        path.equals("/login/candidate") ||
-                        path.equals("/login/company") ||
-                        path.equals("/register/candidate") ||
-                        path.equals("/register/company") ||
+                        path.startsWith("/login") ||
+                        path.startsWith("/register") ||
                         path.equals("/health")) {
+            System.out.println(path);
             filterChain.doFilter(request, response);
             return;
         }
@@ -51,7 +50,9 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
         String authHeader = request.getHeader("Authorization");
 
-        for(int i = 0, i < authHeader.)
+        /*for(int i = 0; i < authHeader.length(); i++) {
+            System.out.println(authHeader.substring(7));;
+        }*/
 
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             filterChain.doFilter(request, response);
@@ -60,8 +61,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
 
         try {
-
-            //die frage ist ob index 7 noch richtig ist?
+            //index 7 because of "Bearer " at the beginning (7 spaces)
             String token = authHeader.substring(7);
             String email = jwtHandler.extractEmail(token);
             String role = jwtHandler.extractRole(token);

@@ -1,11 +1,13 @@
-package com.JobSmartMatcher.Matcher.auth;
+package com.JobSmartMatcher.Matcher.auth.company;
 
 import com.JobSmartMatcher.Matcher.Entities.CompanyEntity;
 import com.JobSmartMatcher.Matcher.Entities.Repos.CompanyRepository;
 import com.JobSmartMatcher.Matcher.auth.security.JWTAuthController;
+import com.JobSmartMatcher.Matcher.auth.security.LoginRequest;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,17 +24,15 @@ public class CompanyLoginController {
     }
 
     @PostMapping(path = "/login/company")
-    public String loginControl(@RequestParam(value = "email") String email, @RequestParam(value = "password") String password) {
+    public String loginControl(@RequestBody LoginRequest request) {
 
-        if (email.equals("Default E-Mail") || password.equals("Default Password")) {
-            return "Some credentials seem to be missing, or something went wrong with giving the data over.";
-        } else if (companyRepository.existsByEmail(email)) {
-            CompanyEntity company = companyRepository.findByEmail(email);
+       if (companyRepository.existsByEmail(request.getEmail())) {
+            CompanyEntity company = companyRepository.findByEmail(request.getEmail());
             System.out.println("Provided mail was found in database.");
             System.out.println("Checking if provided password equals the one in the DB.");
             PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
-            if (passwordEncoder.matches(password, company.getHashedPassword())) {
-                return jwtAuthController.companyLoginJWT(email, password);
+            if (passwordEncoder.matches(request.getPassword(), company.getHashedPassword())) {
+                return jwtAuthController.companyLoginJWT(request.getEmail(), request.getPassword());
             } else {
                 return "Error with code 401: Authentication failed.\nRefresh page.";
             }

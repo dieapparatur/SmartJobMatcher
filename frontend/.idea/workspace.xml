@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28d57c8a-19e8-4832-806d-91bd0a679d28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/company/MeEndpointComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/Candidate/CandidateLoginComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/LoginDecider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CandidateLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CandidateLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CompanyLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CompanyLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/MeEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/MeEndpointCand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JWTAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JWTAuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JWTHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JWTHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CandidateLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/CandidateLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CandidateRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/candidate/CandidateRegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CompanyLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/company/CompanyLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/CompanyRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/company/CompanyRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/JwtAuthFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/UserInfoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JWTErsatz_(NewBackend)/src/main/java/com/JobSmartMatcher/Matcher/auth/security/UserInfoHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/JobPosting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/JobPosting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/Company/CompanyLoginComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartMatcherFrontend/src/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMatcherFrontend/src/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,28 +38,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.App.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.LoginPage.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.main.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.App.jsx.executor": "Run",
+    "Node.js.CompanyLoginComponent.jsx.executor": "Run",
+    "Node.js.LoginPage.jsx.executor": "Run",
+    "Node.js.main.jsx.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/SmartMatcherFrontend/src/Company" />
@@ -93,7 +83,8 @@
       <updated>1772817822962</updated>
       <workItem from="1772817824019" duration="11261000" />
       <workItem from="1772992585195" duration="44041000" />
-      <workItem from="1774683432869" duration="32795000" />
+      <workItem from="1774683432869" duration="33439000" />
+      <workItem from="1775994253964" duration="11949000" />
     </task>
     <servers />
   </component>

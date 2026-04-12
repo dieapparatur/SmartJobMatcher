@@ -34,7 +34,7 @@ public class SecurityConfig {
                         .requestMatchers("/health").permitAll()
                         .requestMatchers("/register/**").permitAll()
                         .requestMatchers("/login/**").permitAll()
-                        .requestMatchers("/company/**").hasRole("company")
+                        .requestMatchers("/company/**").permitAll()
                         .requestMatchers("/candidate/**").hasRole("candidate")
                         .anyRequest().authenticated()) //ist das überhaupt dann noch nützlich? weil wie authenticated?
                 .cors(Customizer.withDefaults())
